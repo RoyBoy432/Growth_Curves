@@ -58,10 +58,10 @@ growth.modGomp <- function(input=" ", output.name=" ",
   results <- as.data.frame(results)
   
   # Temporary Directory
-  # outfile <- paste(temp.dir,output,".txt", sep="")
+  # outfile <- paste(temp.dir,output,".csv", sep="")
 
   # Creat Output Directory
-  outfile <- paste(output.dir,output.name,".txt", sep="")
+  outfile <- paste(output.dir,output.name,".csv", sep="")
   titles <- c("Curve","b0","A","umax","L","z", "umax.lw","umax.up",
               "umax.lw.FI","umax.up.FI")
   write.table(as.matrix(t(titles)), file=outfile, append=F, row.names=F,
